@@ -3,11 +3,9 @@
 // console.log(Producers.length);
 // console.log(DJs.length);
 // console.log(Gigs.length);
-
-
-// dataset1Dj = {name: "", gigs: [mån: , nGigs:]}
-
-
+// const producerID = 5011;
+// const antalGigs = Gigs.filter(gig => gig.producerID == producerID).length;
+// console.log(y);
 
 // Lektion uppgift
 // Gör om så att de är för alla djs
