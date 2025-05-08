@@ -40,15 +40,15 @@ const Managers = [
 ];
 
 const Producers = [
-  {"id":4842,"name":"Gigskaparna"},
-  {"id":5011,"name":"Festen AB"},
-  {"id":5208,"name":"Trance AB"},
-  {"id":5405,"name":"Nattmingel AB"},
-  {"id":6975,"name":"Neverending AB"},
-  {"id":8569,"name":"No Mind AB"},
-  {"id":8922,"name":"Banzai AB"},
-  {"id":9372,"name":"Xtas Produktioner"},
-  {"id":9543,"name":"Finliret AB"}
+  {"id":4842,"name":"Gigskaparna", "genre": "Allround"},
+  {"id":5011,"name":"Festen AB", "genre": "House"},
+  {"id":5208,"name":"Trance AB", "genre": "Trance"},
+  {"id":5405,"name":"Nattmingel AB", "genre": "Downtempo"},
+  {"id":6975,"name":"Neverending AB", "genre": "Techno"},
+  {"id":8569,"name":"No Mind AB", "genre": "Psytrance"},
+  {"id":8922,"name":"Banzai AB", "genre": "Hardstyle"},
+  {"id":9372,"name":"Xtas Produktioner", "genre": "EDM"},
+  {"id":9543,"name":"Finliret AB", "genre": "Minimal"}
 ];
 
 const DJs = [
@@ -59,34 +59,34 @@ const DJs = [
   {"id":3084,"name":"DJ Spark","managerID":1323,"gender":"omicron","ethnicity":"tau"},
   {"id":3284,"name":"DJ Neon","managerID":3151,"gender":"theta","ethnicity":"rho"},
   {"id":3300,"name":"DJ Grand","managerID":7787,"gender":"omicron","ethnicity":"rho"},
-  {"id":3470,"name":"DJ Prism","managerID":7787,"gender":"theta","ethnicity":"psi"},
+  {"id":3470,"name":"DJ Spectrum","managerID":7787,"gender":"theta","ethnicity":"psi"},
   {"id":3779,"name":"DJ Truth","managerID":7836,"gender":"omicron","ethnicity":"rho"},
   {"id":4102,"name":"DJ Flash","managerID":9597,"gender":"theta","ethnicity":"rho"},
-  {"id":4310,"name":"DJ Vibe","managerID":7836,"gender":"lambda","ethnicity":"tau"},
+  {"id":4310,"name":"DJ Groove","managerID":7836,"gender":"lambda","ethnicity":"tau"},
   {"id":5089,"name":"DJ Tempo","managerID":1609,"gender":"omicron","ethnicity":"tau"},
   {"id":5217,"name":"DJ Pulse","managerID":1323,"gender":"lambda","ethnicity":"tau"},
   {"id":5396,"name":"DJ Drix","managerID":8370,"gender":"theta","ethnicity":"psi"},
   {"id":5488,"name":"DJ Blaze","managerID":1609,"gender":"theta","ethnicity":"psi"},
   {"id":5599,"name":"DJ JeyJey","managerID":1609,"gender":"omicron","ethnicity":"psi"},
-  {"id":6081,"name":"DJ Frost","managerID":1323,"gender":"lambda","ethnicity":"tau"},
+  {"id":6081,"name":"DJ Ice","managerID":1323,"gender":"lambda","ethnicity":"tau"},
   {"id":6105,"name":"DJ Wave","managerID":7787,"gender":"omicron","ethnicity":"rho"},
-  {"id":6121,"name":"DJ Pulse","managerID":1656,"gender":"lambda","ethnicity":"rho"},
+  {"id":6121,"name":"DJ Beat","managerID":1656,"gender":"lambda","ethnicity":"rho"},
   {"id":6314,"name":"DJ Thunder","managerID":7787,"gender":"theta","ethnicity":"rho"},
   {"id":6429,"name":"DJ Echo","managerID":1656,"gender":"omicron","ethnicity":"tau"},
   {"id":6534,"name":"DJ Kompagniet","managerID":7787,"gender":"theta","ethnicity":"tau"},
-  {"id":6668,"name":"DJ Blaze","managerID":7787,"gender":"theta","ethnicity":"rho"},
-  {"id":6710,"name":"DJ Flash","managerID":7836,"gender":"theta","ethnicity":"tau"},
-  {"id":7025,"name":"DJ Wave","managerID":3151,"gender":"lambda","ethnicity":"rho"},
+  {"id":6668,"name":"DJ Flame","managerID":7787,"gender":"theta","ethnicity":"rho"},
+  {"id":6710,"name":"DJ Bolt","managerID":7836,"gender":"theta","ethnicity":"tau"},
+  {"id":7025,"name":"DJ Tide","managerID":3151,"gender":"lambda","ethnicity":"rho"},
   {"id":7267,"name":"DJ Storm","managerID":7909,"gender":"lambda","ethnicity":"psi"},
-  {"id":8112,"name":"DJ Neon","managerID":3151,"gender":"theta","ethnicity":"tau"},
-  {"id":8539,"name":"DJ Shadow","managerID":7836,"gender":"lambda","ethnicity":"psi"},
-  {"id":9131,"name":"DJ Storm","managerID":7836,"gender":"omicron","ethnicity":"psi"},
+  {"id":8112,"name":"DJ Glow","managerID":3151,"gender":"theta","ethnicity":"tau"},
+  {"id":8539,"name":"DJ Shade","managerID":7836,"gender":"lambda","ethnicity":"psi"},
+  {"id":9131,"name":"DJ Cyclone","managerID":7836,"gender":"omicron","ethnicity":"psi"},
   {"id":9254,"name":"DJ Finkan","managerID":7787,"gender":"omicron","ethnicity":"rho"},
-  {"id":9289,"name":"DJ Thunder","managerID":1323,"gender":"lambda","ethnicity":"tau"},
+  {"id":9289,"name":"DJ Rumble","managerID":1323,"gender":"lambda","ethnicity":"tau"},
   {"id":9374,"name":"DJ Korpen","managerID":7836,"gender":"omicron","ethnicity":"psi"},
   {"id":9533,"name":"DJ Yoman","managerID":6643,"gender":"theta","ethnicity":"tau"},
-  {"id":9714,"name":"DJ Echo","managerID":1323,"gender":"lambda","ethnicity":"psi"},
-  {"id":9922,"name":"DJ Spark","managerID":8370,"gender":"lambda","ethnicity":"rho"}
+  {"id":9714,"name":"DJ Reflect","managerID":1323,"gender":"lambda","ethnicity":"psi"},
+  {"id":9922,"name":"DJ Ember","managerID":8370,"gender":"lambda","ethnicity":"rho"}
 ];
 
 const Gigs = [
