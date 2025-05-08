@@ -7,9 +7,22 @@
 // const antalGigs = Gigs.filter(gig => gig.producerID == producerID).length;
 // console.log(y);
 
+//koppla djs & producers
+// dj ID
+//producer ID
+
+const pID = 5208;
+
+let x = Gigs.filter(gig => gig.producerID == pID);
+let z = x.filter(gig => gig.djID == 9374);
+console.log(z)
+for (let y of x) {
+    // console.log(z)
+}
+
 // Lektion uppgift
 // Gör om så att de är för alla djs
-const wSvg = 1000;
+const wSvg = 2000;
 const hSvg = 800;
 const hViz = .8 * hSvg;
 const wViz = .8 * wSvg;
@@ -21,15 +34,15 @@ const svg = d3.select("body")
     .attr("height", hSvg)
     .attr("width", wSvg);
 
-const djID = 9374;
+const djID = 5208;
 
 const dataset = {
-    name: DJs.find(dj => dj.id == djID).name,
+    name: Producers.find(dj => dj.id == djID).name,
     gigs: []
 }
 
 for (let month = 0; month < 120; month++) {
-    let djGigs = Gigs.filter(gig => gig.djID == djID)
+    let djGigs = Gigs.filter(gig => gig.producerID == djID)
         .filter(currentGig => {
             let _date = new Date(currentGig.date);
             let _year = _date.getFullYear();
