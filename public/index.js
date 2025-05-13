@@ -31,4 +31,4 @@ function getFillColor(name) {
 const parent = document.querySelector("#wrapper");
 
 
-renderTotalGigs(parent);
+// renderTotalGigs(parent);
