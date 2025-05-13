@@ -9,7 +9,6 @@ function getStrokeColor(name) {
         case "Banzai AB": return "#FF003C";
         case "Xtas Produktioner AB": return "#DA00FF";
         case "Finliret AB": return "#FFD6E8";
-        default: return "#cccccc"; // fallback-färg
     }
 }
 
@@ -24,7 +23,6 @@ function getFillColor(name) {
         case "Banzai AB": return "rgba(255, 0, 60, 0.5)";
         case "Xtas Produktioner AB": return "rgba(218, 0, 255, 0.5)";
         case "Finliret AB": return "rgba(255, 214, 232, 0.5)";
-        default: return "rgba(200,200,200,0.3)"; // fallback-färg
     }
 }
 
