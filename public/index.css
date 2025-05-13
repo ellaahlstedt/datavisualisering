@@ -13,7 +13,7 @@
     --neverending-ab: #00F0FF;
     --no-mind-ab: #A6FF00;
     --banzai-ab: #FF003C;
-    --xtas-produktioner-ab: #DA00FF;
+    --xtas-produktioner: #DA00FF;
     --finliret-ab: #FFD6E8;
 }
 
@@ -45,4 +45,8 @@ h4,
 h5,
 h6 {
     font-family: 'SUSE-Bold';
+}
+
+.responsive-svg {
+    width: 90vw;
 }
