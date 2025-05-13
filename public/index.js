@@ -1,26 +1,32 @@
-const colors = {
-    gigskaparna: "#FFC700",
-    festenAb: "#FF7A00",
-    tranceAb: "#00FFC8",
-    nattmingelAb: "#FF66C4",
-    neverendingAb: "#00F0FF",
-    noMindAb: "#A6FF00",
-    banzaiAb: "#FF003C",
-    xtasProduktionerAb: "#DA00FF",
-    finliretAb: "#FFD6E8"
-};
+function getStrokeColor(name) {
+    switch (name) {
+        case "Gigskaparna": return "#FFC700";
+        case "Festen AB": return "#FF7A00";
+        case "Trance AB": return "#00FFC8";
+        case "Nattmingel AB": return "#FF66C4";
+        case "Neverending AB": return "#00F0FF";
+        case "No Mind AB": return "#A6FF00";
+        case "Banzai AB": return "#FF003C";
+        case "Xtas Produktioner AB": return "#DA00FF";
+        case "Finliret AB": return "#FFD6E8";
+        default: return "#cccccc"; // fallback-färg
+    }
+}
 
-const colorsWithOpacity = {
-    gigskaparna: "rgba(255, 199, 0, 0.5)",
-    festenAb: "rgba(255, 122, 0, 0.5)",
-    tranceAb: "rgba(0, 255, 200, 0.5)",
-    nattmingelAb: "rgba(255, 102, 196, 0.5)",
-    neverendingAb: "rgba(0, 240, 255, 0.5)",
-    noMindAb: "rgba(166, 255, 0, 0.5)",
-    banzaiAb: "rgba(255, 0, 60, 0.5)",
-    xtasProduktionerAb: "rgba(218, 0, 255, 0.5)",
-    finliretAb: "rgba(255, 214, 232, 0.5)"
-};
+function getFillColor(name) {
+    switch (name) {
+        case "Gigskaparna": return "rgba(255, 199, 0, 0.5)";
+        case "Festen AB": return "rgba(255, 122, 0, 0.5)";
+        case "Trance AB": return "rgba(0, 255, 200, 0.5)";
+        case "Nattmingel AB": return "rgba(255, 102, 196, 0.5)";
+        case "Neverending AB": return "rgba(0, 240, 255, 0.5)";
+        case "No Mind AB": return "rgba(166, 255, 0, 0.5)";
+        case "Banzai AB": return "rgba(255, 0, 60, 0.5)";
+        case "Xtas Produktioner AB": return "rgba(218, 0, 255, 0.5)";
+        case "Finliret AB": return "rgba(255, 214, 232, 0.5)";
+        default: return "rgba(200,200,200,0.3)"; // fallback-färg
+    }
+}
 
 const parent = document.querySelector("#wrapper");
 

@@ -32,5 +32,6 @@
 }
 
 body {
-    background-color: rgb(6, 6, 6);
+    background-color: var(--black);
+    color: var(--white);
 }
