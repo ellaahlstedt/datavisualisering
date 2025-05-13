@@ -16,3 +16,21 @@
     --xtas-produktioner-ab: #DA00FF;
     --finliret-ab: #FFD6E8;
 }
+
+@font-face {
+    font-family: 'SUSE-Bold';
+    src: url('media/fonts/suse/SUSE-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SUSE-Regular';
+    src: url('media/fonts/suse/SUSE-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: rgb(6, 6, 6);
+}
