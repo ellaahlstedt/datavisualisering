@@ -37,6 +37,7 @@ body {
     font-family: 'SUSE-Regular';
     margin: 0;
     padding: 0 6rem;
+    font-size: 16px;
 }
 
 h1,
@@ -46,6 +47,7 @@ h4,
 h5,
 h6 {
     font-family: 'SUSE-Bold';
+    font-size: 36px;
 }
 
 .responsive-svg {
