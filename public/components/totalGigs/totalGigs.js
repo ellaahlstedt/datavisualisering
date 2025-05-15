@@ -1,17 +1,45 @@
 function renderTotalGigs(parent) {
+    // Div
+    const totalGigsCon = document.createElement("div");
+    totalGigsCon.classList.add("totalGigsCon");
+    parent.appendChild(totalGigsCon);
 
-    renderTotalGigsSvg();
+    // Header
+    const totalGigsHeader = document.createElement("h2");
+    totalGigsHeader.innerHTML = "Vilka har levererat <span class='totalGigsHighlight'>mest</span>?";
+    totalGigsHeader.classList.add("totalGigsHeader");
+    totalGigsCon.appendChild(totalGigsHeader);
 
+    // Div
+    const totalGigsSvgCon = document.createElement("div");
+    totalGigsSvgCon.classList.add("totalGigsSvgCon");
+    totalGigsCon.appendChild(totalGigsSvgCon);
+
+    // Svg
+    renderTotalGigsSvg(totalGigsSvgCon);
+
+    // Text
+    const totalGigsText = document.createElement("p");
+    totalGigsText.innerHTML = `
+        Den här grafen visar hur många event varje produktionsbolag har genomfört totalt. 
+        <br/><br/>
+        Ett direkt mått på erfarenhet, ju högre stapel, desto mer vana av att skapa, driva och leverera.
+        <br/> <br/>
+        Använd insikten för att identifiera de mest erfarna aktörerna att samarbeta med.
+        <br/>
+       <i> Observera: Skalan börjar vid 650 genomförda event för att lyfta fram skillnader i toppen.</i>
+    `;
+    totalGigsText.classList.add("totalGigsText");
+    totalGigsSvgCon.appendChild(totalGigsText);
 }
 
-function renderTotalGigsSvg() {
+function renderTotalGigsSvg(parent) {
     const totalGigs = [];
     for (let producer of Producers) {
         let producerGigs = Gigs.filter(gig => gig.producerID == producer.id);
         totalGigs.push({ "name": producer.name, "totalGigs": producerGigs.length })
     }
     const producerNames = totalGigs.map(gig => gig.name);
-    console.log(totalGigs);
 
     let maxGigs = 0;
     for (let gig of totalGigs) {
@@ -21,22 +49,22 @@ function renderTotalGigsSvg() {
     }
 
     const wSvg = 850;
-    const hSvg = 600;
+    const hSvg = 500;
     const hViz = 0.8 * hSvg;
-    const wViz = 0.8 * wSvg;
-    const wPad = (wSvg - wViz) / 2;
-    const hPad = (hSvg - hViz) / 2;
+    const wPad = 30;
+    const hPad = 0;
 
     const svg = d3.select(parent)
         .append("svg")
-        .attr("width", wSvg)
-        .attr("height", hSvg);
+        .attr("viewBox", `0 0 ${wSvg} ${hSvg}`)
+        .attr("preserveAspectRatio", "xMidYMid meet")
+        .classed("responsive-svg", true);
 
     // Scales
     const xScale = d3.scaleBand(producerNames, [wPad, wSvg - wPad])
         .paddingInner(0.2)
         .paddingOuter(0.2);
-    const yScale = d3.scaleLinear([0, maxGigs], [hPad + hViz, hPad]);
+    const yScale = d3.scaleLinear([650, maxGigs], [hPad + hViz, hPad]);
 
     // Axis
     const xAxis = svg.append("g")
@@ -47,6 +75,31 @@ function renderTotalGigsSvg() {
         .call(d3.axisLeft(yScale))
         .attr("transform", `translate(${wPad}, 0)`);
 
+    // Gradient
+    const defs = svg.append("defs");
+
+    totalGigs.forEach(d => {
+        const baseColor = getFillColor(d.name);
+
+        const gradient = defs.append("linearGradient")
+            .attr("id", `gradient-${d.name.replace(/\s+/g, '-')}`)
+            .attr("x1", "0%")
+            .attr("y1", "0%")
+            .attr("x2", "0%")
+            .attr("y2", "100%");
+
+        gradient.append("stop")
+            .attr("offset", "0%")
+            .attr("stop-color", baseColor)
+            .attr("stop-opacity", 1);
+
+        gradient.append("stop")
+            .attr("offset", "100%")
+            .attr("stop-color", baseColor)
+            .attr("stop-opacity", 0.4);
+    });
+
+
     // Bars
     const bars = svg.selectAll("rect")
         .data(totalGigs)
@@ -56,7 +109,7 @@ function renderTotalGigsSvg() {
         .attr("y", d => yScale(d.totalGigs))
         .attr("width", xScale.bandwidth())
         .attr("height", d => hPad + hViz - yScale(d.totalGigs))
-        .attr("fill", d => getFillColor(d.name))
+        .attr("fill", d => `url(#gradient-${d.name.replace(/\s+/g, '-')})`)
         .attr("stroke", d => getStrokeColor(d.name))
-        .attr("stroke-width", 2);
+        .attr("stroke-width", 1);
 }
