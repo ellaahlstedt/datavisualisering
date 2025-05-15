@@ -1,0 +1,25 @@
+.totalGigsCon {
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+}
+
+.totalGigsHeader {
+    text-transform: uppercase;
+    font-size: 36px;
+    margin: 0;
+}
+
+.totalGigsHighlight {
+    color: var(--purple);
+}
+
+.totalGigsSvgCon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.totalGigsText i {
+    font-size: 10px;
+}
