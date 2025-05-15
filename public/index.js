@@ -26,7 +26,25 @@ function getFillColor(name) {
     }
 }
 
+function getFullColors(name) {
+    switch (name) {
+        case "Gigskaparna": return "rgba(255, 199, 0)";
+        case "Festen AB": return "rgba(255, 122, 0)";
+        case "Trance AB": return "rgba(0, 255, 200)";
+        case "Nattmingel AB": return "rgba(255, 102, 196)";
+        case "Neverending AB": return "rgba(0, 240, 255)";
+        case "No Mind AB": return "rgba(166, 255, 0)";
+        case "Banzai AB": return "rgba(255, 0, 60)";
+        case "Xtas Produktioner": return "rgba(218, 0, 255)";
+        case "Finliret AB": return "rgba(255, 214, 232)";
+    }
+}
+
 const parent = document.querySelector("#wrapper");
 
 
-// renderTotalGigs(parent);
+attendanceScale(parent);
+
+renderTotalGigs(parent);
+
+experienceOverTimeGraf(parent);

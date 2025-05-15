@@ -1,0 +1,25 @@
+#divForAttendance {
+    display: flex;
+    gap: 2vw;
+    height: 43vw;
+}
+
+#producerButtonsAtt {
+    width: 30vw;
+    height: 39vw;
+    position: relative;
+    top: 8vw;
+
+}
+
+.prodButtonsAtt {
+    width: 13vw;
+    margin: 1vw;
+    cursor: pointer;
+    height: 4vw;
+    border-radius: 40vw;
+}
+
+#textDivForAttendance p {
+    font-size: 1.5vw;
+}
