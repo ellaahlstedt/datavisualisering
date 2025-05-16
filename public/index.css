@@ -48,6 +48,8 @@ h5,
 h6 {
     font-family: 'SUSE-Bold';
     font-size: 36px;
+    text-transform: uppercase;
+    margin: 0;
 }
 
 .responsive-svg {
