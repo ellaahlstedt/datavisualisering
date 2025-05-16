@@ -102,10 +102,10 @@ function renderIncomeSvg(parent) {
         .attr("y", d => (d.y1 - d.y0) / 2 + 6)
         .attr("text-anchor", "middle")
         .attr("dominant-baseline", "middle")
-        .attr("font-size", "32px")
+        .attr("font-size", "28px")
         .attr("fill", "white")
         .text(d => {
-            const percent = Math.round((d.data.totalIncomePerProducer / totalIncome) * 100);
+            const percent = ((d.data.totalIncomePerProducer / totalIncome) * 100).toFixed(1);
             return `${percent}%`;
         });
 
