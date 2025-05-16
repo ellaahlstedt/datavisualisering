@@ -1,12 +1,7 @@
 .totalGigsCon {
     display: flex;
     flex-direction: column;
-    gap: 2.8rem;
-}
-
-.totalGigsHeader {
-    text-transform: uppercase;
-    margin: 0;
+    gap: 2.5rem;
 }
 
 .totalGigsHighlight {

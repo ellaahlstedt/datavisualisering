@@ -48,6 +48,7 @@ function renderTotalGigsSvg(parent) {
         }
     }
 
+    // Svg
     const wSvg = 850;
     const hSvg = 500;
     const hViz = 0.8 * hSvg;
@@ -57,8 +58,7 @@ function renderTotalGigsSvg(parent) {
     const svg = d3.select(parent)
         .append("svg")
         .attr("viewBox", `0 0 ${wSvg} ${hSvg}`)
-        .attr("preserveAspectRatio", "xMidYMid meet")
-        .classed("responsive-svg", true);
+        .attr("preserveAspectRatio", "xMidYMid meet");
 
     // Scales
     const xScale = d3.scaleBand(producerNames, [wPad, wSvg - wPad])

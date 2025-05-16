@@ -1,0 +1,21 @@
+.incomeCon {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.incomeCon .highlight {
+    color: var(--pink);
+}
+
+.incomeSvgCon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.incomeText {
+    max-width: 25%;
+    margin: 0;
+}

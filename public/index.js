@@ -45,6 +45,8 @@ const parent = document.querySelector("#wrapper");
 
 attendanceScale(parent);
 
+renderIncome(parent);
+
 renderTotalGigs(parent);
 
 experienceOverTimeGraf(parent);
