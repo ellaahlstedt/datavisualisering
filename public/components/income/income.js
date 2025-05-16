@@ -22,6 +22,8 @@ function renderIncome(parent) {
         Visst är engagemang och festligheter en viktig del av de olika Ravefesterna. 
         Men lika viktigt kan logistiken vara, hur mycket tjänar du som stad genom att jobba med de olika produktionsbolagen? 
         <br/><br/>
+        Diagrammet här visar hur mycket varje produktionsbolag totalt har tjänat alla städer (i SEK).
+        Varje ruta representerar ett bolag, där storleken visar hur mycket pengar de genererat åt alla städer tillsammans.
         Via diagrammet kan du se vilka bolag som drar in mest, och vilka som drar in lite mindre. 
         Som stad kanske du är ute efter att ha de roligaste, största Ravesen, eller så njuter du kanske av något mer lagom.
         <br/><br/> 
@@ -87,9 +89,8 @@ function renderIncomeSvg(parent) {
         .attr("text-anchor", "middle")
         .attr("dominant-baseline", "middle")
         .text(d => d.data.name)
-        .attr("font-size", "14px")
+        .attr("font-size", "10px")
         .attr("font-family", "SUSE-Bold")
-        .attr("text-transform", "uppercase")
         .attr("fill", d => getStrokeColor(d.data.name));
 
     let totalIncome = 0;

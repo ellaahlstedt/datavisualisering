@@ -15,6 +15,10 @@
     gap: 2rem;
 }
 
+.incomeSvgCon text {
+    text-transform: uppercase;
+}
+
 .incomeText {
     max-width: 25%;
     margin: 0;
