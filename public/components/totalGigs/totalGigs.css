@@ -12,8 +12,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 2rem;
 }
 
 .totalGigsText i {
     font-size: 10px;
+}
+
+.totalGigsText {
+    max-width: 35%;
+    margin: 0;
 }
