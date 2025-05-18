@@ -42,9 +42,13 @@ function getFullColors(name) {
 
 const parent = document.querySelector("#wrapper");
 
+renderHeader(parent);
 
 attendanceScale(parent);
 
 renderTotalGigs(parent);
 
 experienceOverTimeGraf(parent);
+
+renderFooter(parent);
+

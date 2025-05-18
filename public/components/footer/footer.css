@@ -1,0 +1,7 @@
+#footerDiv {
+    height: 133vh;
+    background-image: url("../../media/bilder/footer.png");
+    background-size: cover;
+
+    display: flex;
+}

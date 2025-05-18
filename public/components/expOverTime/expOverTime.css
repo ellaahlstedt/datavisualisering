@@ -1,15 +1,15 @@
 #divForExperience {
     display: flex;
     gap: 2vw;
-    height: 43vw;
+    height: 40vw;
 }
 
 #producerButtons {
     width: 30vw;
-    height: 39vw;
+    height: 30vw;
     position: relative;
-    top: 8vw;
-
+    top: 7vw;
+    left: 6vw;
 }
 
 .prodButtons {
@@ -22,4 +22,13 @@
 
 #textDivForExperience p {
     font-size: 1.5vw;
+}
+
+.experienceHeadline h2 {
+    text-align: end;
+    margin: 0;
+}
+
+.expHL {
+    color: var(--pink);
 }

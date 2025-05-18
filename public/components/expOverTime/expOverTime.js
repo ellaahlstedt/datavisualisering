@@ -4,6 +4,13 @@
 
 function experienceOverTimeGraf(parent) {
 
+    const wrapInExperience = document.createElement("div");
+
+    const experienceHeadline = document.createElement("h2");
+    experienceHeadline.innerHTML = `<h2>HUR <span class="expHL">LÄNGE</span> HAR DE VARIT PÅ SCENEN?</h2>`;
+    experienceHeadline.classList.add("experienceHeadline");
+    wrapInExperience.appendChild(experienceHeadline);
+
     //SKAPA CONTAINER ELEMENTEN
     const divForExperiences = document.createElement("div");
     divForExperiences.id = "divForExperience";
@@ -17,19 +24,20 @@ function experienceOverTimeGraf(parent) {
     divForExperiences.appendChild(buttonDiv);
     divForExperiences.appendChild(svgElement);
 
+    wrapInExperience.appendChild(divForExperiences);
 
-    parent.appendChild(divForExperiences);
+
+    parent.appendChild(wrapInExperience);
 
 
 
 
     //BÖRJA MED SVG UPPSÄTTNINGEN
 
-    //Kanske ska använda en variabel här istället sen
-    const wsvg = 600;
+    const wsvg = 800;
     const hsvg = 500;
 
-    const wviz = 0.90 * wsvg;
+    const wviz = 0.87 * wsvg;
     const hviz = 0.90 * hsvg;
 
     const wpadding = (wsvg - wviz) / 2;
@@ -70,7 +78,8 @@ function experienceOverTimeGraf(parent) {
         button.style.color = color;
         button.style.transition = "all 0.3s ease";
         button.style.cursor = "pointer";
-        button.style.fontSize = "1vw";
+        button.style.fontSize = "0.8vw";
+        button.style.width = "10vw";
 
         button.addEventListener("mouseenter", () => {
             button.style.backgroundColor = color.replace(")", ", 0.3)");
@@ -190,6 +199,6 @@ function experienceOverTimeGraf(parent) {
         Utforska deras resa genom åren och se vilka som har byggt upp erfarenhet och närvaro med tiden. Får fylla ut med mer text här, för estetikens skuld.</p>
     `;
 
-    parent.appendChild(textDivForExperience);
+    wrapInExperience.appendChild(textDivForExperience);
 }
 

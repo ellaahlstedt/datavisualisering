@@ -1,0 +1,28 @@
+#headerDiv {
+    height: 105vh;
+    background-image: url("../../media/bilder/hero_section_2.png");
+    background-size: cover;
+
+    display: flex;
+}
+
+#nav {
+    width: 100vw;
+    display: flex;
+    justify-content: end;
+    gap: 3vw;
+    height: 3vw;
+    color: var(--pink);
+    margin-right: 5vw;
+    margin-top: 1.9vw;
+    font-size: 14px;
+}
+
+#nav p {
+    cursor: pointer;
+}
+
+#nav p:hover {
+    font-size: 14.5px;
+    color: var(--purple);
+}

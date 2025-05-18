@@ -1,6 +1,20 @@
 
 function attendanceScale(parent) {
 
+
+    const wrapInAttendanceElements = document.createElement("div");
+    wrapInAttendanceElements.id = "wrapAttendance";
+
+    const cityHeadline = document.createElement("h2");
+    cityHeadline.innerHTML = "VEM ÄR DU SOM STAD?";
+    cityHeadline.classList.add("cityHeadline");
+    wrapInAttendanceElements.appendChild(cityHeadline);
+
+    const attendanceHeadline = document.createElement("h2");
+    attendanceHeadline.innerHTML = "VEM DROG MEST <span class='attendanceHeadlineHL'>PUBLIK</span> GENOM ÅREN?";
+    attendanceHeadline.classList.add("attendanceHeadline");
+    wrapInAttendanceElements.appendChild(attendanceHeadline);
+
     const divForAttendance = document.createElement("div");
     divForAttendance.id = "divForAttendance";
 
@@ -14,20 +28,19 @@ function attendanceScale(parent) {
     divForAttendance.appendChild(svgAttendance);
     divForAttendance.appendChild(buttonAttDiv);
 
+    wrapInAttendanceElements.appendChild(divForAttendance);
 
-    parent.appendChild(divForAttendance);
-
-
+    parent.appendChild(wrapInAttendanceElements);
 
 
 
     // UPPSÄTTNING SVG
 
-    const wsvg = 600;
+    const wsvg = 800;
     const hsvg = 500;
 
-    const wviz = 0.80 * wsvg;
-    const hviz = 0.80 * hsvg;
+    const wviz = 0.87 * wsvg;
+    const hviz = 0.90 * hsvg;
 
     const wpadding = (wsvg - wviz) / 2;
     const hpadding = (hsvg - hviz) / 2;
@@ -68,7 +81,9 @@ function attendanceScale(parent) {
         button.style.color = color;
         button.style.transition = "all 0.3s ease";
         button.style.cursor = "pointer";
-        button.style.fontSize = "1vw";
+        button.style.fontSize = "0.8vw";
+        button.style.width = "10vw";
+        //button.style.height = "3vw";
 
         button.addEventListener("mouseenter", () => {
             button.style.backgroundColor = color.replace(")", ", 0.3)");
@@ -186,8 +201,6 @@ function attendanceScale(parent) {
 </p>
     `;
 
-    parent.appendChild(textDivForAttendance);
-
-
+    wrapInAttendanceElements.appendChild(textDivForAttendance);
 
 }
