@@ -48,17 +48,17 @@ function renderTotalGigsSvg(parent) {
         }
     }
 
+    // Svg
     const wSvg = 850;
     const hSvg = 500;
     const hViz = 0.8 * hSvg;
     const wPad = 30;
-    const hPad = 0;
+    const hPad = 4;
 
     const svg = d3.select(parent)
         .append("svg")
         .attr("viewBox", `0 0 ${wSvg} ${hSvg}`)
-        .attr("preserveAspectRatio", "xMidYMid meet")
-        .classed("responsive-svg", true);
+        .attr("preserveAspectRatio", "xMidYMid meet");
 
     // Scales
     const xScale = d3.scaleBand(producerNames, [wPad, wSvg - wPad])
@@ -75,31 +75,6 @@ function renderTotalGigsSvg(parent) {
         .call(d3.axisLeft(yScale))
         .attr("transform", `translate(${wPad}, 0)`);
 
-    // Gradient
-    const defs = svg.append("defs");
-
-    totalGigs.forEach(d => {
-        const baseColor = getFillColor(d.name);
-
-        const gradient = defs.append("linearGradient")
-            .attr("id", `gradient-${d.name.replace(/\s+/g, '-')}`)
-            .attr("x1", "0%")
-            .attr("y1", "0%")
-            .attr("x2", "0%")
-            .attr("y2", "100%");
-
-        gradient.append("stop")
-            .attr("offset", "0%")
-            .attr("stop-color", baseColor)
-            .attr("stop-opacity", 1);
-
-        gradient.append("stop")
-            .attr("offset", "100%")
-            .attr("stop-color", baseColor)
-            .attr("stop-opacity", 0.4);
-    });
-
-
     // Bars
     const bars = svg.selectAll("rect")
         .data(totalGigs)
@@ -109,7 +84,7 @@ function renderTotalGigsSvg(parent) {
         .attr("y", d => yScale(d.totalGigs))
         .attr("width", xScale.bandwidth())
         .attr("height", d => hPad + hViz - yScale(d.totalGigs))
-        .attr("fill", d => `url(#gradient-${d.name.replace(/\s+/g, '-')})`)
+        .attr("fill", d => getFillColor(d.name))
         .attr("stroke", d => getStrokeColor(d.name))
-        .attr("stroke-width", 1);
+        .attr("stroke-width", 4);
 }

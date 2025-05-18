@@ -1,25 +1,25 @@
-.totalGigsCon {
+.incomeCon {
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
 }
 
-.totalGigsHighlight {
-    color: var(--purple);
+.incomeCon .highlight {
+    color: var(--pink);
 }
 
-.totalGigsSvgCon {
+.incomeSvgCon {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
 }
 
-.totalGigsText i {
-    font-size: 10px;
+.incomeSvgCon text {
+    text-transform: uppercase;
 }
 
-.totalGigsText {
+.incomeText {
     max-width: 35%;
     margin: 0;
 }

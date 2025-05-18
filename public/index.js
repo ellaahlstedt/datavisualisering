@@ -46,6 +46,8 @@ renderHeader(parent);
 
 attendanceScale(parent);
 
+renderIncome(parent);
+
 renderTotalGigs(parent);
 
 experienceOverTimeGraf(parent);
