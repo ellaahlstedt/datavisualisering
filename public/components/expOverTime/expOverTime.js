@@ -196,8 +196,11 @@ function experienceOverTimeGraf(parent) {
     let textDivForExperience = document.createElement("div");
     textDivForExperience.id = "textDivForExperience";
     textDivForExperience.innerHTML = `
-        <p>Den här grafen visar hur länge varje produktionsbolag varit aktiva baserat på antalet event per år. 
-        Utforska deras resa genom åren och se vilka som har byggt upp erfarenhet och närvaro med tiden. Får fylla ut med mer text här, för estetikens skuld.</p>
+        <p>Den här grafen visar hur länge varje produktionsbolag varit aktiva, baserat på antalet event per år.
+Utforska deras resa genom åren och se vilka som har byggt upp erfarenhet och närvaro med tiden.
+Att förstå ett bolags historik ger inte bara en bild av deras kapacitet, utan även insikt i deras engagemang och uthållighet i branschen.
+Datan hjälper städer att se vilka aktörer som konsekvent varit närvarande - och vilka som kanske är nya men växande.
+Grafen är därför inte bara en översikt, utan ett verktyg för att identifiera stabila samarbetspartners med potential att skapa långsiktiga resultat.</p>
     `;
 
     wrapInExperience.appendChild(textDivForExperience);
