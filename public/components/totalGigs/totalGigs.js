@@ -51,7 +51,7 @@ function renderTotalGigsSvg(parent) {
     // Svg
     const wSvg = 850;
     const hSvg = 500;
-    const hViz = 0.8 * hSvg;
+    const hViz = 0.9 * hSvg;
     const wPad = 30;
     const hPad = 4;
 

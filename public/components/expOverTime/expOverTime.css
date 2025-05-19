@@ -9,7 +9,7 @@
     height: 30vw;
     position: relative;
     top: 7vw;
-    left: 6vw;
+    left: 2vw;
 }
 
 .prodButtons {
@@ -31,4 +31,8 @@
 
 .expHL {
     color: var(--pink);
+}
+
+#wrapInExperience {
+    padding: 0 4rem;
 }

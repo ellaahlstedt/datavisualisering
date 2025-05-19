@@ -2,6 +2,25 @@
     height: 133vh;
     background-image: url("../../media/bilder/footer.png");
     background-size: cover;
+}
 
-    display: flex;
+.FHL {
+    color: var(--purple);
+}
+
+.FHL2 {
+    color: var(--pink);
+}
+
+#footerHeadline {
+    text-align: center;
+    margin-top: 7vw;
+}
+
+#footerInfo {
+    width: 65vw;
+    margin-left: 8vw;
+    margin-top: 12vw;
+    font-size: 18px;
+    line-height: 1.5;
 }

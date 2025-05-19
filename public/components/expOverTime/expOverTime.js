@@ -5,6 +5,7 @@
 function experienceOverTimeGraf(parent) {
 
     const wrapInExperience = document.createElement("div");
+    wrapInExperience.id = "wrapInExperience"
 
     const experienceHeadline = document.createElement("h2");
     experienceHeadline.innerHTML = `<h2>HUR <span class="expHL">LÄNGE</span> HAR DE VARIT PÅ SCENEN?</h2>`;
