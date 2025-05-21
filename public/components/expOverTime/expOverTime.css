@@ -29,6 +29,12 @@
     margin: 0;
 }
 
+.expText {
+    position: relative;
+    left: 32.5vw;
+    top: 2.5vw;
+}
+
 .expHL {
     color: var(--pink);
 }

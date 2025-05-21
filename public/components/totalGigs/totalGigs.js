@@ -10,6 +10,12 @@ function renderTotalGigs(parent) {
     totalGigsHeader.classList.add("totalGigsHeader");
     totalGigsCon.appendChild(totalGigsHeader);
 
+    // Scale text
+    const gigText = document.createElement("p");
+    gigText.innerHTML = "Total gigs";
+    gigText.classList.add("gigText");
+    totalGigsCon.appendChild(gigText);
+
     // Div
     const totalGigsSvgCon = document.createElement("div");
     totalGigsSvgCon.classList.add("totalGigsSvgCon");

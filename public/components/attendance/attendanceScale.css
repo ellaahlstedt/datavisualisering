@@ -32,6 +32,12 @@
     margin-bottom: 10vw;
 }
 
+.attendanceText {
+    position: relative;
+    left: 0.5vw;
+    top: 3vw;
+}
+
 #wrapAttendance {
     padding: 0 4rem;
 }

@@ -1,6 +1,6 @@
 #headerDiv {
     height: 105vh;
-    background-image: url("../../media/bilder/hero_section_2.png");
+    background-image: url("../../media/bilder/heroSectionFinal.png");
     background-size: cover;
 
     display: flex;
@@ -13,7 +13,7 @@
     gap: 3vw;
     height: 3vw;
     color: var(--pink);
-    margin-right: 5vw;
+    margin-right: 3.5vw;
     margin-top: 1.9vw;
     font-size: 14px;
 }

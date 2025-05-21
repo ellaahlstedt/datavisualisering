@@ -15,6 +15,11 @@ function attendanceScale(parent) {
     attendanceHeadline.classList.add("attendanceHeadline");
     wrapInAttendanceElements.appendChild(attendanceHeadline);
 
+    const attendanceText = document.createElement("p");
+    attendanceText.innerHTML = "Attendance";
+    attendanceText.classList.add("attendanceText");
+    wrapInAttendanceElements.appendChild(attendanceText);
+
     const divForAttendance = document.createElement("div");
     divForAttendance.id = "divForAttendance";
 

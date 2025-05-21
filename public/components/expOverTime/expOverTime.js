@@ -12,7 +12,11 @@ function experienceOverTimeGraf(parent) {
     experienceHeadline.classList.add("experienceHeadline");
     wrapInExperience.appendChild(experienceHeadline);
 
-    //SKAPA CONTAINER ELEMENTEN
+    const experienceText = document.createElement("p");
+    experienceText.innerHTML = "Max gigs a year";
+    experienceText.classList.add("expText");
+    wrapInExperience.appendChild(experienceText);
+
     const divForExperiences = document.createElement("div");
     divForExperiences.id = "divForExperience";
 
