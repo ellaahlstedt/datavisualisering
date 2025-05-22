@@ -1,9 +1,13 @@
 #footerDiv {
-    background-image: url("../../media/images/footerBg.png");
     background-size: cover;
     background-position: bottom;
     padding: 0 4rem;
     margin-bottom: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .border {
@@ -11,7 +15,8 @@
     border-top: 4px solid var(--pink);
 }
 
-.FHL {
+.FHL,
+.FHLRaves {
     color: var(--pink);
 }
 
@@ -27,20 +32,24 @@
     color: var(--neverending-ab);
 }
 
+.FHLRaves {
+    font-weight: 800;
+}
+
 #footerHeadline {
     text-align: center;
     margin-top: 6vw;
 }
 
 #footerInfo {
-    width: 65vw;
+    width: 75vw;
     line-height: 1.5;
     margin-bottom: 6vw;
 }
 
 .footerLogo {
     color: var(--pink);
-    font-family: 'SUSE-ExtraBold';
+    font-weight: 800;
 }
 
 #footerContactCon {
@@ -53,7 +62,7 @@
     color: var(--blue);
     text-align: center;
     font-size: 24px;
-    font-family: 'SUSE-ExtraBold';
+    font-weight: 800;
 }
 
 #footerContactInfo {

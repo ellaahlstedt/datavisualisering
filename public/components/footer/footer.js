@@ -20,7 +20,7 @@ function renderFooter(parent) {
     så skulle <span class="FHLTrance">Trance AB</span> och <span class="FHLXtas">Xtas Produktioner</span> vara en bra match för er! 
     Är ni däremot mer intresserad av stora dunkande fester i samband med lite större vinster,
     är <span class="FHLTrance">Trance AB</span> och <span class="FHLNever">Neverending AB</span> de bästa bolagen på det just nu. 
-    <br/><br/> Du som stad får gärna kontakta <img src="./media/images/ravesThatFitFooter.png" alt="Kontakt" /> för vidare samtal och eventuell kontraktskrivning med en av våra bolag. Varmt och lysande välkommen.`;
+    <br/><br/> Du som stad får gärna kontakta <span class="FHLRaves">RAVESthatFIT</span> för vidare samtal och eventuell kontraktskrivning med en av våra bolag. Varmt och lysande välkommen.`;
 
     let footerContactCon = document.createElement("div");
     footerContactCon.id = "footerContactCon";
@@ -31,7 +31,7 @@ function renderFooter(parent) {
 
     let footerContactInfo = document.createElement("p");
     footerContactInfo.id = "footerContactInfo";
-    footerContactInfo.innerHTML = "00 345 562 536 495 <br/> ravethatfit@gmail.com";
+    footerContactInfo.innerHTML = "00 345 562 536 495 <br/> ravesthatfit@gmail.com";
 
     footerDiv.appendChild(footerHeadline);
     footerDiv.appendChild(footerInfo);

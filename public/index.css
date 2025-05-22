@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bebas+Neue&family=Bungee+Inline&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Julius+Sans+One&family=Orbitron:wght@400..900&family=Russo+One&family=Saira+Stencil+One&family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
 
 :root {
     --pink: #FF5BAA;
@@ -19,31 +19,10 @@
     --finliret-ab: #FFD6E8;
 }
 
-@font-face {
-    font-family: 'SUSE-Bold';
-    src: url('media/fonts/suse/SUSE-Bold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'SUSE-Regular';
-    src: url('media/fonts/suse/SUSE-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'SUSE-ExtraBold';
-    src: url('media/fonts/suse/SUSE-ExtraBold.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-}
-
 body {
     background-color: var(--black);
     color: var(--white);
-    font-family: 'SUSE-Regular';
+    font-family: 'SUSE';
     margin: 0;
     padding: 0;
     font-size: 20px;
@@ -56,8 +35,9 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'SUSE-Bold';
+    font-family: 'SUSE';
     font-size: 36px;
+    font-weight: 800;
     text-transform: uppercase;
     margin: 0;
 }
