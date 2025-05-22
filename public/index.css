@@ -62,10 +62,14 @@ h6 {
     margin: 0;
 }
 
-#wrapper {
+main {
     display: flex;
     flex-direction: column;
-    gap: 13vw;
+    gap: 10vw;
+    position: relative;
+    margin-top: -2rem;
+    z-index: 1;
+    margin-bottom: 6rem;
 }
 
 .responsive-svg {

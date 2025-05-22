@@ -40,21 +40,26 @@ function getFullColors(name) {
     }
 }
 
-const parent = document.querySelector("#wrapper");
+const wrapper = document.querySelector("#wrapper");
 
-renderHeader(parent);
 
-attendanceScale(parent);
 
-renderIncome(parent);
+renderHeader(wrapper);
 
-renderProducers(parent)
+const main = document.createElement("main");
+wrapper.appendChild(main);
 
-renderTotalGigs(parent);
+attendanceScale(main);
 
-experienceOverTimeGraf(parent);
+renderIncome(main);
 
-renderFooter(parent);
+renderProducers(main)
+
+renderTotalGigs(main);
+
+experienceOverTimeGraf(main);
+
+renderFooter(wrapper);
 
 
 
