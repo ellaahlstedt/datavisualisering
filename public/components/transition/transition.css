@@ -5,12 +5,15 @@
     position: relative;
 }
 
-#transitionImg {
+#transitionBg {
     width: 100vw;
     position: absolute;
     top: -6.5rem;
     z-index: -1;
     left: -4rem;
+    height: 40vh;
+    border-radius: 50% 50% 0 0;
+    background: linear-gradient(180deg, var(--dark-purple) 0%, var(--black) 75%);
 }
 
 .transitionProducers {

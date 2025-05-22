@@ -20,8 +20,7 @@ function renderTransition(parent, type) {
     }
 
     // img
-    const transitionImg = document.createElement("img");
-    transitionImg.setAttribute("src", "./media/images/transition.png");
-    transitionImg.id = "transitionImg";
-    transitionCon.appendChild(transitionImg);
+    const transitionBg = document.createElement("div");
+    transitionBg.id = "transitionBg";
+    transitionCon.appendChild(transitionBg);
 }
