@@ -1,7 +1,5 @@
 #headerDiv {
-    background-image: url("../../media/bilder/heroSectionFinal.png");
     background-size: cover;
-
     display: flex;
     flex-direction: column;
 }
@@ -10,43 +8,69 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 #raveLine p {
     font-size: 16px;
     text-align: center;
     line-height: 1.5;
-    margin-bottom: 8vw;
+    margin-bottom: 10vw;
 }
 
 #rave {
-    height: 21vw;
-    width: 90vw;
-    margin-left: 9vw;
-    margin-top: 8.5vw;
+    text-shadow: 5px 5px 4px var(--dark-purple, #261D3E);
+    font-family: "SUSE";
+    font-size: 145px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin: 4vw 0;
+
+    color: var(--pink)
+}
+
+#ravesText {
+    flex-grow: 1;
+
 }
 
 #line {
     height: 2.5vw;
-    width: 50vw;
+    width: 90;
+
+    font-family: "SUSE";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 2vw 0;
+
+    color: var(--purple);
 }
 
 #nav {
     display: flex;
-    justify-content: end;
+    height: 4vw;
+    color: var(--pink);
+    justify-content: space-between;
+    margin: 3vw 3vw;
+    border-bottom: 4px solid var(--pink)
+}
+
+
+#navDivs {
+    display: flex;
     gap: 3vw;
     height: 3vw;
     color: var(--pink);
-    margin-right: 3.5vw;
-    margin-top: 1.9vw;
 }
 
-#nav p {
+#navDivs p {
     cursor: pointer;
-    font-size: 15px;
+    font-size: 16px;
 }
 
-#nav p:hover {
+#navDivs p:hover {
     color: var(--purple);
 }

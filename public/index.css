@@ -75,3 +75,8 @@ main {
 .responsive-svg {
     width: 90vw;
 }
+
+.border {
+    width: 100%;
+    border-top: 4px solid var(--pink);
+}

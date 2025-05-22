@@ -6,10 +6,6 @@
     margin-bottom: 1vw;
 }
 
-.border {
-    width: 100%;
-    border-top: 4px solid var(--pink);
-}
 
 .FHL {
     color: var(--pink);
