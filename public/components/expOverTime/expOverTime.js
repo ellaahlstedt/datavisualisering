@@ -13,7 +13,7 @@ function experienceOverTimeGraf(parent) {
     wrapInExperience.appendChild(experienceHeadline);
 
     const experienceText = document.createElement("p");
-    experienceText.innerHTML = "Max gigs a year";
+    experienceText.innerHTML = "Totalt antal gigs";
     experienceText.classList.add("expText");
     wrapInExperience.appendChild(experienceText);
 

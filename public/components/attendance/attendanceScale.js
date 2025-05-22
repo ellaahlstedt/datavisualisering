@@ -16,7 +16,7 @@ function attendanceScale(parent) {
     wrapInAttendanceElements.appendChild(attendanceHeadline);
 
     const attendanceText = document.createElement("p");
-    attendanceText.innerHTML = "Attendance";
+    attendanceText.innerHTML = "Deltagande";
     attendanceText.classList.add("attendanceText");
     wrapInAttendanceElements.appendChild(attendanceText);
 
@@ -158,8 +158,13 @@ function attendanceScale(parent) {
         const xAxis = d3.axisBottom(xScale).tickFormat(d3.format("d"));
         const yAxis = d3.axisLeft(yScale);
 
-        xAxisG.transition().duration(500).call(xAxis);
-        yAxisG.transition().duration(500).call(yAxis);
+        xAxisG.transition()
+            .duration(500)
+            .call(xAxis);
+
+        yAxisG.transition()
+            .duration(500)
+            .call(yAxis);
 
         const circles = svg.selectAll("circle")
             .data(dataToShowAttendance, d => d.year);

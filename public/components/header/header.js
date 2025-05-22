@@ -11,7 +11,7 @@ function renderHeader(parent) {
         <p>Du som stad</p>
     </div>
 
-    <div id="solagen">
+    <div id="bolagen">
         <p>Bolagen</p>
     </div>
 
@@ -23,3 +23,24 @@ function renderHeader(parent) {
     headerDiv.appendChild(nav);
 
 }
+
+window.addEventListener('DOMContentLoaded', () => {
+    const scrollPlaces = {
+        stad: 'wrapAttendance',
+        bolagen: 'producersCon',
+        slutsats: 'footerDiv'
+    };
+
+    Object.entries(scrollPlaces).forEach(([clickedOn, scrollTo]) => {
+        const click = document.getElementById(clickedOn);
+        const scroll = document.getElementById(scrollTo);
+
+        if (click && scroll) {
+            click.addEventListener('click', () => {
+                scroll.scrollIntoView({ behavior: 'smooth' });
+            });
+        }
+    });
+});
+
+

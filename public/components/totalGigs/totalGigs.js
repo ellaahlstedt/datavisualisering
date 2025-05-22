@@ -12,7 +12,7 @@ function renderTotalGigs(parent) {
 
     // Scale text
     const gigText = document.createElement("p");
-    gigText.innerHTML = "Total gigs";
+    gigText.innerHTML = "Totalt antal gigs";
     gigText.classList.add("gigText");
     totalGigsCon.appendChild(gigText);
 
