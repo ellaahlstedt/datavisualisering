@@ -21,7 +21,7 @@
 }
 
 #rave {
-    height: 23vw;
+    height: 21vw;
     width: 90vw;
     margin-left: 9vw;
     margin-top: 8.5vw;
@@ -48,6 +48,5 @@
 }
 
 #nav p:hover {
-    font-size: 15.5px;
     color: var(--purple);
 }
