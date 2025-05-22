@@ -9,26 +9,38 @@ function renderHeader(parent) {
     nav.id = "nav";
     nav.innerHTML = `
     
-    <div id="stad">
-        <p>Du som stad</p>
+    <div id="ravesText">
+        <p>RavesThatFit</p>
     </div>
 
-    <div id="bolagen">
-        <p>Bolagen</p>
-    </div>
+    <div id="navDivs">
 
-    <div id="slutsats">
-        <p>Slutsats</p>
+        <div id="stad">
+            <p>Du som stad</p>
+        </div>
+
+        <div id="bolagen">
+            <p>Bolagen</p>
+        </div>
+
+        <div id="slutsats">
+            <p>Slutsats</p>
+        </div>
+
     </div>
+    
     `;
+
+    let navBorder = document.createElement("div");
+    navBorder.classList.add("border");
 
     headerDiv.appendChild(nav);
 
     let raveLineCon = document.createElement("div");
     raveLineCon.id = "raveLine";
     raveLineCon.innerHTML = `
-    <img id="rave" src="./media/images/ravesthatfit.png" alt="headline">
-    <img id="line" src="./media/images/tagline.png" alt="tagline">
+    <h1 id="rave">RAVESthatFIT</h1>
+    <h3 id="line">HITTA RÄTT PRODUKTIONSBOLAG FÖR DIG</h3>
     <p>Din stad har en vibe - låt rätt produktion förhöja den.<br>
     Upptäck vilket bolag som passar bäst för just er atmosfär.</p>
     `;
