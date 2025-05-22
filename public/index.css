@@ -33,6 +33,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'SUSE-ExtraBold';
+    src: url('media/fonts/suse/SUSE-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
 body {
     background-color: var(--black);
     color: var(--white);
@@ -53,6 +60,10 @@ h6 {
     font-size: 36px;
     text-transform: uppercase;
     margin: 0;
+}
+
+p {
+    font-size: 20px;
 }
 
 #wrapper {
