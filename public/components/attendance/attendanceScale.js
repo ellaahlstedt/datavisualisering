@@ -5,10 +5,12 @@ function attendanceScale(parent) {
     const wrapInAttendanceElements = document.createElement("div");
     wrapInAttendanceElements.id = "wrapAttendance";
 
-    const cityHeadline = document.createElement("h2");
+    renderTransition(wrapInAttendanceElements, "city")
+
+    /*const cityHeadline = document.createElement("h2");
     cityHeadline.innerHTML = "VEM ÄR DU SOM STAD?";
     cityHeadline.classList.add("cityHeadline");
-    wrapInAttendanceElements.appendChild(cityHeadline);
+    wrapInAttendanceElements.appendChild(cityHeadline);*/
 
     const attendanceHeadline = document.createElement("h2");
     attendanceHeadline.innerHTML = "VEM DROG MEST <span class='attendanceHeadlineHL'>PUBLIK</span> GENOM ÅREN?";

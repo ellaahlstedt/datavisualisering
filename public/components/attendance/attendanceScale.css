@@ -40,4 +40,5 @@
 
 #wrapAttendance {
     padding: 0 4rem;
+    position: relative;
 }
