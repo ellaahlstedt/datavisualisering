@@ -6,7 +6,7 @@ function renderTotalGigs(parent) {
 
     // Header
     const totalGigsHeader = document.createElement("h2");
-    totalGigsHeader.innerHTML = "Vilka har levererat <span class='totalGigsHighlight'>mest</span>?";
+    totalGigsHeader.innerHTML = "Vilka har levererat <span class='totalGigsHighlight'>mest</span> gigs?";
     totalGigsHeader.classList.add("totalGigsHeader");
     totalGigsCon.appendChild(totalGigsHeader);
 

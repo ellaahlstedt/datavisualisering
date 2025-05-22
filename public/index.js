@@ -48,6 +48,8 @@ attendanceScale(parent);
 
 renderIncome(parent);
 
+renderProducers(parent)
+
 renderTotalGigs(parent);
 
 experienceOverTimeGraf(parent);

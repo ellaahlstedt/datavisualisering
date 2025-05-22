@@ -2,20 +2,18 @@
     text-align: center;
     margin-top: 15vh;
     margin-bottom: 10vh;
+    position: relative;
 }
 
 #transitionImg {
     width: 100vw;
     position: absolute;
-    top: 0;
+    top: -6.5rem;
     z-index: -1;
     left: -6rem;
 }
 
-.transitionLight {
-    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.55);
-}
-
-.transitionSound {
-    color: var(--purple);
+.transitionProducers {
+    color: var(--blue);
+    text-shadow: 0px 0px 8px rgba(8, 211, 254, 0.55);
 }

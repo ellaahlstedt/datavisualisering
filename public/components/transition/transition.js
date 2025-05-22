@@ -14,7 +14,7 @@ function renderTransition(parent, type) {
             transitionCon.appendChild(header);
             break;
         case "producer":
-            header.innerHTML = "möt bolagen bakom <span class='transitionLight'>ljuset</span> och <span class='transitionSound'>ljudet</span>";
+            header.innerHTML = "De olika <span class='transitionProducers'>produktionsbolagen</span>";
             transitionCon.appendChild(header);
             break;
     }
