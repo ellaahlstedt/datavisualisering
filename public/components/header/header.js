@@ -4,9 +4,11 @@ function renderHeader(parent) {
 
     parent.appendChild(headerDiv);
 
+
     let nav = document.createElement("nav");
     nav.id = "nav";
     nav.innerHTML = `
+    
     <div id="stad">
         <p>Du som stad</p>
     </div>
@@ -21,6 +23,16 @@ function renderHeader(parent) {
     `;
 
     headerDiv.appendChild(nav);
+
+    let raveLineCon = document.createElement("div");
+    raveLineCon.id = "raveLine";
+    raveLineCon.innerHTML = `
+    <img id="rave" src="./media/bilder/ravesthatfit.png" alt="headline">
+    <img id="line" src="./media/bilder/tagline.png" alt="tagline">
+    <p>Din stad har en vibe - låt rätt produktion förhöja den.<br>
+    Upptäck vilket bolag som passar bäst för just er atmosfär.</p>
+    `;
+    headerDiv.appendChild(raveLineCon);
 
 }
 

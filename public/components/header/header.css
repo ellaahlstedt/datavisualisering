@@ -1,13 +1,38 @@
 #headerDiv {
-    height: 105vh;
     background-image: url("../../media/bilder/heroSectionFinal.png");
     background-size: cover;
 
     display: flex;
+    flex-direction: column;
+}
+
+#raveLine {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#raveLine p {
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 8vw;
+}
+
+#rave {
+    height: 23vw;
+    width: 90vw;
+    margin-left: 9vw;
+    margin-top: 8.5vw;
+}
+
+#line {
+    height: 2.5vw;
+    width: 50vw;
 }
 
 #nav {
-    width: 100vw;
     display: flex;
     justify-content: end;
     gap: 3vw;
