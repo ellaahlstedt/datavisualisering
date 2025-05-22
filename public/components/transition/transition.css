@@ -10,7 +10,7 @@
     position: absolute;
     top: -6.5rem;
     z-index: -1;
-    left: -6rem;
+    left: 0;
 }
 
 .transitionProducers {
