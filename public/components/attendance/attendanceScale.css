@@ -19,10 +19,6 @@
     border-radius: 40vw;
 }
 
-#textDivForAttendance p {
-    font-size: 16px;
-}
-
 .attendanceHeadlineHL {
     color: var(--pink);
 }

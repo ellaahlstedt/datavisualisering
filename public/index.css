@@ -46,7 +46,7 @@ body {
     font-family: 'SUSE-Regular';
     margin: 0;
     padding: 0;
-    font-size: 16px;
+    font-size: 20px;
     overflow-x: hidden;
 }
 
@@ -60,10 +60,6 @@ h6 {
     font-size: 36px;
     text-transform: uppercase;
     margin: 0;
-}
-
-p {
-    font-size: 20px;
 }
 
 #wrapper {
