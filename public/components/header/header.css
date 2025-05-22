@@ -25,6 +25,7 @@
     font-weight: 800;
     line-height: normal;
     margin: 4vw 0;
+    text-transform: initial;
 
     color: var(--pink)
 }

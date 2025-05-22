@@ -10,7 +10,7 @@ function renderHeader(parent) {
     nav.innerHTML = `
     
     <div id="ravesText">
-        <p>RavesThatFit</p>
+        <p>RAVESthatFIT</p>
     </div>
 
     <div id="navDivs">
