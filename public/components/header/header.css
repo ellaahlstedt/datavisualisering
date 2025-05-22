@@ -40,14 +40,14 @@
     color: var(--pink);
     margin-right: 3.5vw;
     margin-top: 1.9vw;
-    font-size: 14px;
 }
 
 #nav p {
     cursor: pointer;
+    font-size: 15px;
 }
 
 #nav p:hover {
-    font-size: 14.5px;
+    font-size: 15.5px;
     color: var(--purple);
 }
