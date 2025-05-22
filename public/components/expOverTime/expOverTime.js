@@ -76,7 +76,7 @@ function experienceOverTimeGraf(parent) {
         button.textContent = producer.name;
         button.classList.add("prodButtons");
 
-        const color = getFullColors(producer.name);
+        const color = getFullColor(producer.name);
 
         button.style.border = `0.3vw solid ${color}`;
         button.style.background = "transparent";
@@ -97,7 +97,7 @@ function experienceOverTimeGraf(parent) {
 
         button.addEventListener("click", () => {
             if (activeButton) {
-                const prevColor = getFullColors(activeButton.textContent);
+                const prevColor = getFullColor(activeButton.textContent);
                 activeButton.style.backgroundColor = "transparent";
                 activeButton.style.color = prevColor;
             }

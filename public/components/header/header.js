@@ -27,8 +27,8 @@ function renderHeader(parent) {
     let raveLineCon = document.createElement("div");
     raveLineCon.id = "raveLine";
     raveLineCon.innerHTML = `
-    <img id="rave" src="./media/bilder/ravesthatfit.png" alt="headline">
-    <img id="line" src="./media/bilder/tagline.png" alt="tagline">
+    <img id="rave" src="./media/images/ravesthatfit.png" alt="headline">
+    <img id="line" src="./media/images/tagline.png" alt="tagline">
     <p>Din stad har en vibe - låt rätt produktion förhöja den.<br>
     Upptäck vilket bolag som passar bäst för just er atmosfär.</p>
     `;

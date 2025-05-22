@@ -77,8 +77,8 @@ function renderIncomeSvg(parent) {
     nodes.append("rect")
         .attr("width", d => d.x1 - d.x0)
         .attr("height", d => d.y1 - d.y0)
-        .attr("fill", d => getFillColor(d.data.name))
-        .attr("stroke", d => getStrokeColor(d.data.name))
+        .attr("fill", d => getOpacityColor(d.data.name))
+        .attr("stroke", d => getFullColor(d.data.name))
         .attr("stroke-width", 4);
 
 
@@ -91,7 +91,7 @@ function renderIncomeSvg(parent) {
         .text(d => d.data.name)
         .attr("font-size", "10px")
         .attr("font-family", "SUSE-Bold")
-        .attr("fill", d => getStrokeColor(d.data.name));
+        .attr("fill", d => getFullColor(d.data.name));
 
     let totalIncome = 0;
     for (let data of newData) {

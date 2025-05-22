@@ -90,7 +90,7 @@ function renderTotalGigsSvg(parent) {
         .attr("y", d => yScale(d.totalGigs))
         .attr("width", xScale.bandwidth())
         .attr("height", d => hPad + hViz - yScale(d.totalGigs))
-        .attr("fill", d => getFillColor(d.name))
-        .attr("stroke", d => getStrokeColor(d.name))
+        .attr("fill", d => getOpacityColor(d.name))
+        .attr("stroke", d => getFullColor(d.name))
         .attr("stroke-width", 4);
 }
